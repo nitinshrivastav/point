@@ -5,7 +5,7 @@
 
 
 import pickle
-import pandas as pd
+
 
 
 # In[2]:
@@ -31,25 +31,8 @@ def fkjfk():
         market=int(request.form['m'])
         res=model.predict([[research,admin,market]])
         return render_template('apnatimeaayega.html',ans=res)
-if(__name__=='__main__'):
+if __name__=='__main__':
     app.run()
-
-
-# In[6]:
-
-
-pwd
-
-
-# In[7]:
-
-
-file=open('adishivam.csv','w')
-file.close()
-
-
-# In[ ]:
-
 
 
 
